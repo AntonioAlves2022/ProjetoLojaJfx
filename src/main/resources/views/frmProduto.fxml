@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.antonio.aulas.controller.ProdutoController"
+      alignment="CENTER"
+      spacing="10"
+      prefHeight="400"
+      prefWidth="600">
+
+    <children>
+
+        <Label text="Produto"/>
+
+        <TextField fx:id="txtNome" promptText="Nome do produto"/>
+
+        <Label text="Preço do Produto"/>
+
+        <TextField fx:id="txtPreco" promptText="Preço"/>
+
+        <Label text="Estoque"/>
+
+        <TextField fx:id="txtEstoque" promptText="Quantidade em estoque"/>
+
+        <Button text="Salvar" onAction="#salvar"/>
+
+        <TableView fx:id="tabela" prefHeight="200" prefWidth="500">
+
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colNome" text="Produto" prefWidth="150"/>
+                <TableColumn fx:id="colPreco" text="Preço" prefWidth="100"/>
+                <TableColumn fx:id="colEstoque" text="Estoque" prefWidth="100"/>
+            </columns>
+
+        </TableView>
+
+    </children>
+</VBox>
